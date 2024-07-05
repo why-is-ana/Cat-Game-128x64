@@ -63,8 +63,9 @@ La hoja de calculo para gestionar las matrices del dibujo se encuentran en este 
 El ESP32 imprime en la matriz de la OLED bit por bit de izquierda a derecha, manda un 1 para que el led se encienda y un 0 para que el led se apague, este proceso se repite para una matriz de 128x64, la idea es que se haga un patron de ceros y unos para la imagen de un total de 8192 puntos, como este patron seria muy largo, se agrupa en bloques de 8 bits y luego cada bloque es transformado a formato Hexadecimal, para imprimir una cadena de datos un poco mas corta y manipulable.<br><br>
 
 Para poder dibujar la imagen que desea descargue el <a href="Creador de mapa de bits.xlsm">Excel</a>, una vez hecho entre a la hoja de calculo y <b>permita la edicion y los macros</b> (aparecera el boton de "habilitar" en la parte de arriba) la hoja esta diseñada para que con cada click el cuadrado selecionado invierta su valor de cero a uno o viceversa, una vez realizado el dibujo en la parte derecha se encontraran dos cuadros para copiar.<br><br>
-<b>El primero: </b> Es la concatenacion de los bits en el orden de izquierda a derecha, fila por fila. Este es el modelo en el que trabaja nuestra libreria de Adrafruit.<br>
-<b>El segundo: </b> Es la concatenacion de los bits de arriba hacia abajo, columna por columna. Este es el modelo en el que trabajan otras librerias generalmente de Arduino o las personalizadas que podemos encontrar en internet.<br>
+<b>El primero: </b> Es la concatenacion de los bits de arriba hacia abajo, columna por columna. Este es el modelo en el que trabajan otras librerias generalmente enfocadas solamente a Arduino o las personalizadas que podemos encontrar en internet.<br><br>
+<b>El segundo: </b> Es la concatenacion de los bits en el orden de izquierda a derecha, fila por fila. Este es el modelo en el que trabaja nuestra libreria de Adrafruit.<b> Este sera el mapa de bits que usaremos para dibujar en nuestra OLED. </b><br>
+
 <img src="imagenes/mapaDeBitsCopiar.png"><br>
 Una vez copiado el mapa de bits debemos hacer lo siquiente si queremos añadirlo a nuestro programa.<br>
 
