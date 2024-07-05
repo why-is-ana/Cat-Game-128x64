@@ -70,20 +70,22 @@ Una vez copiado el mapa de bits debemos hacer lo siquiente si queremos añadirlo
 
 <h2>Primer Paso</h2>
 Descargue el <a href="proyecto_gatito.ino">codigo en ArduinoIDE</a> y paselo a la ESP32 de su preferencia. Verifique que los puertos GIOP que usaremos con entradas esten bien asisganados en su modelo. Recuerde que si su modelo de ESP32 es diferente, asigne otros pines para los botones, y de preferencia que sean los asignados a los puertos digitales.<br>
-Tambien verifique que los puertos de SCL y SDA de la pantalla OLED, esten conectados correctamente a los puertos de su ESP32, si usara un modelo diferente (Ejemplo el de1 15 pines) busque en su hoja de datos que pines corresponden para el SCL y el SDA y conectelos alli.<br>
+Tambien verifique que los puertos de SCL y SDA de la pantalla OLED, esten conectados correctamente a los puertos de su ESP32, si usara un modelo diferente (Ejemplo el de 15 pines) busque en su hoja de datos que pines corresponden para el SCL y el SDA y conectelos alli.<br>
+Compile el programa y paselo al ESP32.
 
 <h2>Segundo Paso</h2>
 Realize las conexiones segun el esquematico que se a previsto para esto:<br>
+Encuentre el esquematico <a href="Esquematico-CatGame128x64.pdf">Aqui</a>. 
 
-
-<h2>Tercer Paso</h2>
+<h2>Tercer Paso (Opcional si se desea cambiar la imagen)</h2>
 Crear un variable de cierto tipo y agregar dentro de sus parentesis el codigo del mapa de bits. <b>Recordar que el mapa de bits no debe terminar en coma</b>, fijese en el final de la cadena, si aparece por error una coma, eliminela. Tenga en cuenta que por patrones de programacion el final de la llave que contendra al mapa de bits, si debe tener su ; respectivo, o sino el codigo les mandara error.<br>
 <img src="imagenes/agregarUnNuevoDibujo.png"><br>
+Para imprimir la imagen en pantalla, solo basta que dentro del ciclo <b>Loop</b> mandemos los siquientes comandos.<br>
+<img src="imagenes/imprimirElDibujo.png"><br>
 
 
 
-
-# Creditos
+<h1>Creditos</h1>
 <ul>
 <li>Diseño y Construccion: Boyd Robert Mallqui Rodriguez</li>
 <li>Creadora macro de Excel:<a href="https://www.youtube.com/watch?v=UpN1Kx6uz_U&t=0s"> Maria Paula</a> nos basamos en sus macros para poder crear el mismo sistema en un ESP32.</li>
