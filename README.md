@@ -4,7 +4,7 @@ Cat Game o Juego del Gato, es un proyecto simple, cuya finalidad es que se pueda
 
 <h2>Software y Materiales</h2>
 El programa para el ESP32 creado en ArduinoIDE se encuentra <a href="www.google.com">aqui</a>.<br>
-La hoja de calculo para gestionar las matrices del dibujo se encuentran en este documento de <a href="www.facebook.com">Excel</a>.<br><br>
+La hoja de calculo para gestionar las matrices del dibujo se encuentran en este documento de <a href="Creador de mapa de bits.xlsm">Excel</a>.<br><br>
 
 <table>
 <thead>
