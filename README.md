@@ -59,6 +59,9 @@ La hoja de calculo para gestionar las matrices del dibujo se encuentran en este 
 <b>Tercera accion: </b>Al presionar ambos botones el dibujo del gato baja ambas patas.<br><br>
 <img src="imagenes/gato_03.jpg" alt="gato en una oled bajando una mano" width="400">
 
+<h3>Documentacion</h3>
+El ESP32 imprime en la matriz de la OLED bit por bit de izquierda a derecha, manda un 1 para que el led se encienda y un 0 para que el led se apague,
+
 <h3>Creditos</h3>
 <ul>
 <li>Diseño y Construccion: Boyd Robert Mallqui Rodriguez</li>
