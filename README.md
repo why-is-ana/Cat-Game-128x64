@@ -60,7 +60,8 @@ La hoja de calculo para gestionar las matrices del dibujo se encuentran en este 
 <img src="imagenes/gato_03.jpg" alt="gato en una oled bajando una mano" width="400">
 
 <h3>Documentacion</h3>
-El ESP32 imprime en la matriz de la OLED bit por bit de izquierda a derecha, manda un 1 para que el led se encienda y un 0 para que el led se apague,
+El ESP32 imprime en la matriz de la OLED bit por bit de izquierda a derecha, manda un 1 para que el led se encienda y un 0 para que el led se apague, este proceso se repite para una matriz de 128x64, la idea es que se haga un patron de ceros y unos para la imagen de un total de 8192 puntos, como este patron seria muy largo, se agrupa en bloques de 8 bits y luego cada bloque es transformado a formato Hexadecimal, para imprimir una cadena de datos un poco mas corta y manipulable.<br>
+Para poder dibujar la imagen que desea descargue el 
 
 <h3>Creditos</h3>
 <ul>
